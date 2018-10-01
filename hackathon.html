@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js\typed.js"></script>
+<script src="hackathonScript.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<h1>Smiley's Dungeon</h1>
+
+<div id="div1">
+	<p>You find yourself in a dark room.</p>
+
+	<a href="#" id="response1" data-div-go-to="div2" data-a-text="Open the door."></a>
+</div>
+
+<div id="div2">
+	<p>You open the door.</p>
+	<a data-a-text="Step Outside." href="#" id="response2" data-div-go-to="div4"></a>
+</div>
+
+<div id="div4">
+	<p>You step outside and walk into a long, dark hallway.</p>
+	<a data-a-text="Go left." href="#" id="response4a" data-div-go-to="div5"></a>
+	<a data-a-text="Go right." href="#" id="response4b" data-div-go-to="div10"></a>
+</div>
+
+<div id="div5">
+	<p>You see stairs.</p>
+	<a data-a-text="Climb down." href="#" id="response5a" data-div-go-to="div6"></a>
+	<a data-a-text="Climb up." href="#" id="response5b" data-div-go-to="div7"></a>
+</div>
+
+<div id="div6">
+	<p>You see a figure.</p>
+	<a data-a-text="Approach." href="#" id="response6a" data-div-go-to="div8"></a>
+	<a data-a-text="Run." href="#" id="response6b" data-div-go-to="div9"></a>
+</div>
+
+<div id="div7">
+	<p>You've discovered the Penrose Stairs. Game Over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response7" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div8">
+	<p>It's Smiley himself.<br>He asks you: "Where are you going?"</p>
+	<a data-a-text="I'm trying to get out." href="#" id="response8a" data-div-go-to="div15"></a>
+	<a data-a-text="The ants, they haunt my dreams." href="#" id="response8b" data-div-go-to="div16"></a>
+</div>
+
+<div id="div9">
+	<p>You trip. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response9" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div10">
+	<p>You find yourself in the bathroom. You hear a click and the door locks.</p>
+	<a data-a-text="Scream." href="#" id="response10a" data-div-go-to="div11"></a>
+	<a data-a-text="Enter a stall." href="#" id="response10b" data-div-go-to="div12"></a>
+</div>
+
+<div id="div11">
+	<p>That does nothing. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response11" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div12">
+	<p>You find a wrench.</p>
+	<a data-a-text="Try to use it to open the door." href="#" id="response12a" data-div-go-to="div13"></a>
+	<a data-a-text="Look for an air vent." href="#" id="response12b" data-div-go-to="div14"></a>
+</div>
+
+<div id="div13">
+	<p>Nothing happens. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response13" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div14">
+	<p>There are none. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response14" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div15">
+	<p>Smiley: "There is no way out. Here's a wrench."</p>
+	<a data-a-text="Take it." href="#" id="response15a" data-div-go-to="div17"></a>
+	<a data-a-text="Leave it." href="#" id="response15b" data-div-go-to="div18"></a>
+</div>
+
+<div id="div16">
+	<p>Smiley: "What the fuck? Here's a wrench."</p>
+	<a data-a-text="Take it." href="#" id="response16a" data-div-go-to="div20"></a>
+	<a data-a-text="Leave it." href="#" id="response16b" data-div-go-to="div21"></a>
+</div>
+
+<div id="div17">
+	<p>Congratulations. You have a wrench.</p>
+	<a data-a-text="Throw it at Smiley." href="#" id="response17a" data-div-go-to="div22"></a>
+	<a data-a-text="Throw it at Smiley." href="#" id="response17b" data-div-go-to="div22"></a>
+</div>
+
+<div id="div18">
+	<p>Smiley says he'll haunt you.</p>
+	<a data-a-text="Run." href="#" id="response18" data-div-go-to="div19"></a>
+</div>
+
+<div id="div19">
+	<p>You trip. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response19" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div20">
+	<p>Part of the wall collapses. You see a loose brick.</p>
+	<a data-a-text="Move it." href="#" id="response20a" data-div-go-to="div35"></a>
+	<a data-a-text="Leave it." href="#" id="response20b" data-div-go-to="div36"></a>
+</div>
+
+<div id="div21">
+	<p>Smiley throws it at you and you die. Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response21" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div22">
+	<p>The wrench passes through Smiley. Smiley says: "Fuck you."</p>
+	<a data-a-text='Respond with: "Fuck you too Smiley."' href="#" id="response22a" data-div-go-to="div23"></a>
+	<a data-a-text="*Shiver* It's the ghost of Ghost of Christmas Past." href="#" id="response22b" data-div-go-to="div26"></a>
+</div>
+
+<div id="div23">
+	<p>Smiley evaporates, leaving the wrench.</p>
+	<a data-a-text="Take it." href="#" id="response23a" data-div-go-to="div25"></a>	
+	<a data-a-text="Leave it." href="#" id="response23b" data-div-go-to="div24"></a>
+</div>
+
+<div id="div24">
+	<p>Game over!</p>
+	<a data-a-text="Rebirth!" href="#" id="response24" data-div-go-to="div1" class="rebirth"></a>	
+</div>
+
+<div id="div25">
+	<p>Congratulations! You now own a wrench. A text box appears! It says: What was your SAT score?</p>	
+	<a data-a-text="I did the ACT..." href="#" id="response25a" data-div-go-to="div29"></a>
+	<a data-a-text="CMC told me to say 2400." href="#" id="response25b" data-div-go-to="div30"></a>
+</div>
+
+<div id="div26">
+	<p>Smiley says: No, I'm Albert.</p>
+	<a data-a-text="Run." href="#" id="response26a" data-div-go-to="div27"></a>
+	<a data-a-text="Hide." href="#" id="response26b" data-div-go-to="div28"></a>
+</div>
+
+<div id="div27">
+	<p>You find a blue door.</p>
+	<a data-a-text="Open it." href="#" id="response27a" data-div-go-to="div34"></a>
+	<a data-a-text="Keep running." href="#" id="response27b" data-div-go-to="div33"></a>
+</div>
+
+<div id="div28">
+	<p>There's nowhere to hide. Game over.</p>
+	<a data-a-text="Rebirth!" href="#" id="response28" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div29">
+	<p>Game over.</p>
+	<a data-a-text="Rebirth!" href="#" id="response29" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div30">
+	<p>The text box disappears and an aggresive 47 replaces it. Smiley reappears.</p>
+	<a data-a-text="Bless me father, for I have sinned. Cecil is my name and soul." href="#" id="response30a" data-div-go-to="div32"></a>
+	<a data-a-text="47? The fuck?" href="#" id="response30b" data-div-go-to="div31"></a>
+</div>
+
+<div id="div31">
+	<p>Smiley rips the wrench from your hand and everything goes black. <br> You've been discovered. <br> Game over.</p>
+	<a data-a-text="Rebirth!" href="#" id="response31" data-div-go-to="div1" class="rebirth"></a>	
+</div>
+
+<div id="div32">
+	<p>Smiley takes the wrench from your hand as gently as a butterfly landing softly on a fresh green leaf. He bows and disappears. Game over (but Smiley acknowledged you!!)	</p>
+	<a data-a-text="Rebirth!" href="#" id="response32" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div33">
+	<p>You're an idiot and run into a wall. As you feel the life drain out of you and you slowly pass in and out of consciousness, you realise that you never had that Frank omelette and - <br> Game over. </p>
+	<a data-a-text="Rebirth!" href="#" id="response33" data-div-go-to="div1" class="rebirth"></a>	
+</div>
+
+<div id="div34">
+	<p>You realise that you just went from the second to the third floor of Smiley's grand mansion and quicker than you can say "What the Feldblum" you find yourself melting to your quick and slimy death. Game over.</p>
+	<a data-a-text="Rebirth!" href="#" id="response34" data-div-go-to="div1" class="rebirth"></a>	
+</div>
+
+<div id="div35">
+	<p>Fuck! It's a pot of Gold! You realise that there's no need to force yourself to like CS, Math, or any other STEM Major... You've found the ticket to study the humanities freely! A small tag peeks out from underneath the mine. 
+	<br>"Savings from our communual pensions - the now defunct Pomona Astrology department"
+	<br>Game over. </p>
+	<a data-a-text="Rebirth!" href="#" id="response35" data-div-go-to="div1" class="rebirth"></a>
+</div>
+
+<div id="div36">
+	<p>Fuck! You didn't look at the brick. Twenty years from now, you'll look back at this moment and regret. Regret, regret, regret.
+	<br>Game fucking over.</p>
+	<a data-a-text="Rebirth!" href="#" id="response36" data-div-go-to="div1" class="rebirth"></a>	
+</div>
+
+</body>
+</html>

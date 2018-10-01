@@ -1,0 +1,43 @@
+body{
+	background:black;
+	font-family:  'Share Tech Mono', monospace;
+}
+
+p:before, a:before {
+	content: "> ";
+}
+h1{
+	text-align: center;
+	color:#1BE565;
+	font-weight: 100;
+}
+p{
+	color:#1BE565;
+	font-weight: 100;
+}
+a{
+	text-indent: 5px;
+	color:#1BE565;
+	font-weight: 100;
+	display: block;
+	font-style: italic;
+	text-decoration: underline;
+
+}
+
+
+a:nth-child(2):before { 
+    content: "A. ";
+}
+
+
+a:nth-child(4):before { 
+    content: "B. ";
+}
+
+.rebirth:nth-child(2):before {
+	content: "";
+}
+.typed-cursor{
+	display:none;
+}
